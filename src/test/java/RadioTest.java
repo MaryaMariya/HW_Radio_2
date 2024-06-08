@@ -2,7 +2,6 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 public class RadioTest {
-    // Тестируем станции.
 
     @Test
     public void lessThanAcceptableStation() {
@@ -58,8 +57,6 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
 
-    // Тестируем громкость.
-
     @Test
     public void nullValueVolume() {
         Radio radio = new Radio();
@@ -114,7 +111,6 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
 
-    // Тестируем переключение станций вперёд.
 
     @Test
     public void nullNextStation() {
@@ -146,9 +142,7 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
 
-    // Тестируем переключение станций назад.
-
-    @Test
+     @Test
     public void minimumAcceptablePrevStation() {
         Radio radio = new Radio();
         radio.setCurrentStation(0);
@@ -178,7 +172,6 @@ public class RadioTest {
         Assertions.assertEquals(expected, actual);
     }
 
-    // Тестируем переключение громкости вперёд.
 
     @Test
     public void nullVolume() {
@@ -209,8 +202,6 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         Assertions.assertEquals(expected, actual);
     }
-
-    // Тестируем переключение громкости назад.
 
     @Test
     public void minimumAcceptablePrevVolume() {
